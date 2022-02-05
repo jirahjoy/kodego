@@ -1,0 +1,164 @@
+        ::placeholder {
+           padding-left: 5px;
+       }
+       
+       .required:after {
+           content: '*';
+           color: red;
+       }
+       
+       .modal-header {
+           background-color: #fdd835;
+       }
+       /* main-about */
+       /* About Us */
+       
+       .main-about {
+           grid-area: main-about;
+       }
+       
+       .about-website {
+           background-color: #fff;
+           padding: 10px;
+       }
+       
+       .main-about h1,
+       .the-team h1 {
+           font-style: 2em;
+           padding: 5px;
+           color: #ffee58;
+       }
+       
+       .image-text,
+       .footer-logo {
+           display: block;
+           padding: 0px;
+       }
+       
+       .image-text img {
+           float: left;
+           width: 100px;
+           height: 100px;
+           padding: 5px;
+       }
+       
+       .about-p {
+           color: #424242;
+           text-align: justify;
+       }
+       
+       .about-website h1 {
+           color: #424242;
+           text-align: center;
+       }
+       
+       .div-btn-contact {
+           display: flex;
+           justify-content: center;
+       }
+       /* Contact Us Form */
+       
+       .contact-us {
+           background-color: #fff;
+           width: 90%;
+           padding: 20px;
+       }
+       
+       .contact-us fieldset {
+           border: 1px #424242 solid;
+           padding: 1em;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           background-color: beige;
+       }
+       
+       .contact-us input[type=text],
+       .contact-us input[type=text],
+       .contact-us input[type=email],
+       .contact-us textarea,
+       .contact-us button {
+           width: 90%;
+           border: 2px solid #757575;
+           margin: 2px;
+           border-radius: 5px;
+       }
+       
+       textarea {
+           resize: none;
+       }
+       
+       .contact-us input[type=button] {
+           background-color: #757575;
+           color: #ffee58;
+       }
+       /* Our Team */
+       
+       .the-team {
+           background-color: #424242;
+           padding: 5px;
+       }
+       
+       .the-team h1 {
+           text-align: center;
+       }
+       
+       .team-gallery {
+           display: grid;
+           grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 1fr 1fr 1fr;
+       }
+       
+       .img1 {
+           grid-area: img1;
+       }
+       
+       .img2 {
+           grid-area: img2;
+       }
+       
+       .img3 {
+           grid-area: img3;
+       }
+       
+       .img4 {
+           grid-area: img4;
+       }
+       
+       .img5 {
+           grid-area: img5;
+       }
+       
+       .img6 {
+           grid-area: img6;
+       }
+       
+       .image-box {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+       }
+       
+       .image-box img {
+           width: 80px;
+           height: 80px;
+           border-radius: 50%;
+       }
+       
+       .image-box h6 {
+           color: #fff;
+       }
+       
+       .image-box h6 {
+           font-size: 12px;
+           font-weight: normal;
+           padding: 5px;
+       }
+       
+       .officer-img.img {
+           width: 80px;
+           height: 100px;
+       }

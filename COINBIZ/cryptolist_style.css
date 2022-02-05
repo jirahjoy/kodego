@@ -1,0 +1,328 @@
+/* crypto list page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.body {
+    display: grid;
+    grid-template-areas: "nav-hamburger" "cryptolist-main" "footer";
+    font-family: 'Abel', sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px auto 150px;
+}
+
+
+/* nav bar and links */
+
+.nav-hamburger {
+    grid-area: nav-hamburger;
+    background-color: #ffee58;
+}
+
+a {
+    color: #ffee58;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eeeeee;
+}
+
+
+/* Main Content */
+
+.cryptolist-main {
+    grid-area: cryptolist-main;
+    display: flex;
+    flex-direction: column;
+}
+
+.h4-crypto {
+    margin-bottom: 0;
+}
+
+
+/* nav 2 */
+
+.nav2 {
+    background-color: #424242;
+    padding: 10px;
+    margin: 0;
+    /* height: auto; */
+    grid-area: nav2;
+}
+
+.nav-item,
+.dropdown {
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #424242;
+}
+
+.nav-item:hover,
+.dropdown:hover {
+    color: #ffee58;
+}
+
+.nav-item:focus,
+.dropdown:focus {
+    color: #ffee58;
+}
+
+.dropdown-menu {
+    width: 100%;
+    background-color: #424242;
+}
+
+.nav-item,
+.nav-link {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link:active,
+.nav-pills .show>.nav-link {
+    background-color: #424242;
+}
+
+.nav-item.nav-link:hover {
+    color: #ffee58;
+}
+
+
+/* SECTION 2 */
+
+.h4-chart,
+.h4-calculator {
+    padding: 10px;
+    color: #ffee58;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    background-color: #494949;
+    text-align: center;
+}
+
+.chart-listitem {
+    /* border: none; */
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.chart-selectlist {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    /* background-color: #fff9c4; */
+}
+
+
+/* .chart-image {
+    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid salmon;
+    border: none;
+    padding: auto;
+} */
+
+.coin-image {
+    width: 200px;
+    height: 10px;
+    border: green 2px solid;
+}
+
+.chart-search {
+    /* border: none; */
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.calculator-div {
+    /* height: 50%; */
+    /*be 60%*/
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-layout {
+    /* display: grid;
+    height: 50%;
+    
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 0.3em;
+    border: none; */
+    display: flex;
+    flex-direction: column;
+    /* grid-template-areas: "input-altcoin input-currency" "select-alt select-currency" "conversion-1" "conversion-2" "conversion-3"; */
+}
+
+.select-alt,
+.select-currency,
+.conversion {
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+}
+
+.input-altcoin input[type=number],
+.input-currency input[type=number] {
+    height: 50px;
+    font-size: 20px;
+    width: 70%;
+}
+
+.input-altcoin label,
+.input-currency label {
+    padding: 5px;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.select-alt select,
+.select-currency select {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+.conversion-1 button,
+.conversion-2 button,
+.conversion-3 button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #ffee58;
+    border-radius: 10px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #424242;
+    grid-area: footer;
+}
+
+.footer-social {
+    border: 0px solid #ffee58;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fdd835;
+}
+
+.footer-social a,
+.footer-social i {
+    padding: 0 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.footer-social a:hover,
+.footer-social i:hover {
+    color: #fff;
+}
+
+.footer-logo p {
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
+}
+
+.footer-copyright {
+    border: 0px solid #424242;
+    text-align: center;
+    color: #424242;
+    background-color: #fdd835;
+    border-top: 1px solid #424242;
+}
+
+.footer-copyright p {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-logo img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border: 0px solid red;
+}
+
+
+/* buttons
+ */
+
+.btn-primary {
+    background-color: #fdd835;
+    color: #424242;
+}
+
+.btn-primary:hover {
+    color: #fdd835;
+    background-color: #424242;
+}
+
+.btn-secondary {
+    background-color: #424242;
+    color: #fdd835;
+}
+
+.btn-secondary:hover {
+    background-color: #424242;
+    color: #fff;
+}
+
+.bg-darkgray {
+    background-color: #424242;
+    color: #fff;
+}
+
+.bg-yellow {
+    background-color: #fdd835;
+    color: #424242;
+}
+
+
+/* select option */
+
+
+/* MEDIA QUERIES */
+
+
+/* MIN 426 MAX */
+
+
+/* circle icon */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+iframe {
+    overflow: hidden;
+}

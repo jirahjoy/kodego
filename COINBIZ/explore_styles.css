@@ -1,0 +1,100 @@
+::placeholder {
+    padding-left: 5px;
+}
+
+
+/* Cointainer 1 */
+
+.container-1 {
+    padding: 0px;
+    background-color: #fff;
+}
+
+.h5-portal1 {
+    grid-area: h5-portal1;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.learn-image img {
+    width: 100px;
+}
+
+.box-p h5 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.box-p p {
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 5px;
+}
+
+
+/* Container-2 */
+
+.container-2 {
+    padding: 0px;
+}
+
+.h5-portal {
+    grid-area: h5-portal;
+    padding: 15px 0;
+    text-transform: uppercase;
+    /* background-color: #bdbdbd; */
+    font-size: 1.9em;
+}
+
+.learn-image,
+.box-image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+i {
+    color: #000;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: -25px;
+    z-index: 1;
+}
+
+.box-paragraph {
+    padding: 0 10px;
+}
+
+.box-paragraph p {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 25px 0 10px 0px;
+    border-radius: 3px;
+}
+
+.fas.fa-hand-holding-usd,
+.fab.fa-ethereum,
+.fab.fa-bitcoin {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.h5-courses {
+    grid-area: h5-portal1;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.p-course {
+    margin-bottom: 0;
+}
+
+.box-p p {
+    background-color: #e0e0e0 !important;
+    color: #000;
+}

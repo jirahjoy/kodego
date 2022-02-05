@@ -1,0 +1,336 @@
+/* crypto list page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.body {
+    display: grid;
+    grid-template-areas: "nav-hamburger" "cryptolist-main" "footer";
+    font-family: 'Abel', sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px auto 150px;
+}
+
+
+/* nav bar and links */
+
+.nav-hamburger {
+    grid-area: nav-hamburger;
+    background-color: #ffee58;
+}
+
+a {
+    color: #ffee58;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eeeeee;
+}
+
+
+/* Main Content */
+
+.cryptolist-main {
+    grid-area: cryptolist-main;
+    display: flex;
+    flex-direction: column;
+}
+
+.h4-crypto {
+    margin-bottom: 0;
+}
+
+
+/* nav 2 */
+
+.nav2 {
+    background-color: #424242;
+    padding: 10px;
+    margin: 0;
+    /* height: auto; */
+    grid-area: nav2;
+}
+
+.nav-item,
+.dropdown {
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #424242;
+}
+
+.nav-item:hover,
+.dropdown:hover {
+    color: #ffee58;
+}
+
+.nav-item:focus,
+.dropdown:focus {
+    color: #ffee58;
+}
+
+.dropdown-menu {
+    width: 100%;
+    background-color: #424242;
+}
+
+.nav-item,
+.nav-link {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link:active,
+.nav-pills .show>.nav-link {
+    background-color: #424242;
+}
+
+.nav-item.nav-link:hover {
+    color: #ffee58;
+}
+
+
+/* SECTION 1 */
+
+.row.search-select {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* SECTION 2 */
+
+.section2 {
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+/* iframe */
+
+.iframe-outer {
+    height: 964px;
+    background-color: #1D2330;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 5 px solid #282E3B;
+    border-radius: 4px;
+    text-align: right;
+    line-height: 14px;
+    font-size: 12px;
+    font-feature-settings: normal;
+    text-size-adjust: 100%;
+    box-shadow: inset 0 -20px 0 0 #282E3B;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.iframe-outer.iframe-inner {
+    height: 944px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+/* end of section 2 */
+
+
+/* section 3 */
+
+.calculator-div {
+    padding: 40px;
+    background-color: #424242;
+}
+
+.calculator-layout {
+    border: 1px ridge #fdd835;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.h4-chart,
+.h4-calculator {
+    padding: 10px;
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    background-color: #fdd835;
+    text-align: center;
+}
+
+.chart-listitem {
+    /* border: none; */
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.chart-selectlist {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    /* background-color: #fff9c4; */
+}
+
+
+/* footer */
+
+footer {
+    background-color: #424242;
+    grid-area: footer;
+}
+
+.footer-social {
+    border: 0px solid #ffee58;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fdd835;
+}
+
+.footer-social a,
+.footer-social i {
+    padding: 0 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.footer-social a:hover,
+.footer-social i:hover {
+    color: #fff;
+}
+
+.footer-logo p {
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
+}
+
+.footer-copyright {
+    border: 0px solid #424242;
+    text-align: center;
+    color: #424242;
+    background-color: #fdd835;
+    border-top: 1px solid #424242;
+}
+
+.footer-copyright p {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-logo img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border: 0px solid red;
+}
+
+
+/* buttons */
+
+.btn:active {
+    border: none;
+}
+
+.btn-primary {
+    background-color: #fdd835;
+    color: #000;
+    border: none;
+    border-color: none;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited,
+.btn-primary:focus-within {
+    background-color: #fac903;
+    color: #000;
+    border: none;
+    border-color: none;
+}
+
+.btn-primary:hover {
+    background-color: #fac903;
+    color: #000;
+}
+
+.btn-secondary {
+    background-color: #424242;
+    color: #fdd835;
+}
+
+.btn-secondary:hover {
+    background-color: #5c5b5b;
+    color: #fdd835;
+}
+
+.bg-darkgray {
+    background-color: #424242;
+    color: #fff;
+}
+
+.bg-yellow {
+    background-color: #fdd835;
+    color: #424242;
+}
+
+
+/* .form-control:focus {
+    box-shadow: none;
+    border-color: #fdd835;
+}
+
+.btn:focus,
+.btn-primary:focus,
+.btn-secondary {
+    box-shadow: none;
+    border-color: #fdd835;
+} */
+
+select.curr-select:hover,
+select.btc-select:hover {
+    background-color: whitesmoke;
+}
+
+div.col6 {
+    padding: 0;
+}
+
+
+/* webkit to remove scroll on input:number */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* LAPTOP S */
+
+@media screen and (min-width:100px) {
+    .navbar-toggler {
+        display: none;
+    }
+}

@@ -1,0 +1,148 @@
+/* crypto list page */
+
+
+/* Main Content */
+
+.h4-crypto {
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    font-size: 2.1em;
+}
+
+.p-chart,
+.p-calculator {
+    font-size: 18px;
+}
+
+
+/* SECTION 1 */
+
+.row.search-select {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* SECTION 2 */
+
+.section2 {
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+/* iframe */
+
+.iframe-outer {
+    height: 964px;
+    background-color: #000;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 5 px solid #282E3B;
+    border-radius: 4px;
+    text-align: right;
+    line-height: 14px;
+    font-size: 12px;
+    font-feature-settings: normal;
+    text-size-adjust: 100%;
+    box-shadow: inset 0 -20px 0 0 #282E3B;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.iframe-outer.iframe-inner {
+    height: 944px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+/* end of section 2 */
+
+
+/* section 3 */
+
+.calculator-div {
+    padding: 2px 30px;
+    background-color: #fff;
+}
+
+.calculator-layout {
+    border: 1px ridge #fdd835;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.h4-chart,
+.h4-calculator {
+    padding: 10px;
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    background-color: #fdd835;
+    text-align: center;
+}
+
+.chart-listitem {
+    /* border: none; */
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.chart-selectlist {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    /* background-color: #fff9c4; */
+}
+
+
+/* webkit to remove scroll on input:number */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* laptop */
+
+@media screen and (min-width: 990px) {
+    .calculator-layout {
+        padding: 1px;
+    }
+    div.calculator-div {
+        padding: 2px 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768) and (max-width:991px) {
+    /* mobile */
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .calculator-div {
+        padding: 10px 10px;
+        background-color: #fff;
+    }
+    .row.search-select {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}

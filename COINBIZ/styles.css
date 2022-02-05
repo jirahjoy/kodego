@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+main {
+    background-color: #757575;
+    height: 60%;
+}
+
+main div {
+    height: 500px;
+    border: 1px solid #ffee58;
+}
+
+header,
+footer {
+    background-color: #ffee58;
+    height: 20%;
+}
+
+header div {
+    height: 60px;
+    border: 1px solid #000;
+}
+
+header nav {
+    height: 150px;
+    border: 1px solid #000;
+}
+
+
+/* NAV */
+
+.nav li {
+    display: inline-block;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+a {
+    padding: 10px 20px;
+    border: 1px solid #000;
+}
+
+
+/* business page  */
+
+
+/* .business-main,
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 60%;
+} */
+
+.right-aside,
+.left-aside {
+    height: 100%;
+    flex: 2;
+}
+
+.main-section {
+    height: 100%;
+    flex: 5;
+    background-color: yellow;
+}
+
+
+/* end of business */
+
+
+/* .wrapper-container {
+    height: auto;
+    display: grid;
+    grid-template-areas: "header header header" "article article article" "section main aside" "footer footer footer";
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 20% 40% 1fr 20%;
+}
+
+.header {
+    grid-area: header;
+    background-color: cadetblue;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: cadetblue;
+}
+
+.left-aside {
+    grid-area: section;
+    background-color: cornsilk;
+}
+
+.right-aside {
+    grid-area: aside;
+    background-color: cornsilk;
+}
+
+.main-section {
+    grid-area: main;
+}
+
+.banner {
+    grid-area: article;
+} */
